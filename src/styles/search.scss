@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.search_main{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    div{
+        margin-top: 10px ;
+        button{
+            font-weight: 600;
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            background-color: orangered;
+            box-shadow: none;
+            box-shadow: 0px 20px 40px 0px #FA63233D;
+            box-shadow: 0px 5px 10px 0px #FD725C38;
+            cursor: pointer;
+        }
+    
+        input{
+            padding-left: 20px;
+            font-size: 12px;
+            height: 40px;
+            width: 500px;
+            color: grey;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            margin-right: 20px;
+        }
+    }
+
+    font-size: 20px;
+    color: white;
+
+
+    #display_results{
+        
+        
+        justify-content: center;
+        align-items: center;
+        // padding: 0px 200px;
+        width: 1000px;
+        margin: 0px auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+
+        .search_results{
+            padding: 20px 10px;
+            background-color: #F2F1F1;
+            margin: 0px 20px 20px 0px;
+            box-shadow: 0px 2.4631879329681396px 4.187419891357422px 0px #00000001;
+            box-shadow: 0px 10.838027954101562px 8.67042064666748px 0px #00000002;
+            box-shadow: 0px 26.60243034362793px 17.291582107543945px 0px #00000003;
+            box-shadow: 0px 51.234317779541016px 33.893463134765625px 0px #00000003;
+            box-shadow: 0px 86.2115707397461px 62.318668365478516px 0px #00000004;
+            box-shadow: 0px 133.0121612548828px 106.40972137451172px 0px #00000005;
+            div{
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                img{
+                    width: 100%;
+                }
+
+                p{
+                    font-size: 9px;
+                    text-align: center;
+                    color: grey;
+                    font-weight: 700;
+                    margin: 20px 0px;
+                }
+
+                .link{
+                    margin-top: 0px;
+                    height: 30px;
+                    width: 80px;
+                    background-color: black;
+                    border-radius: 5px;
+                    a{
+                        margin: auto auto;
+                        font-size: 9px;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) { 
+    .search_main{
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button{
+                margin-top: 10px;
+            }
+            input{
+                // height: 30px;
+                width: 300px;
+            }
+        }
+
+        #display_results{
+            // padding: 0px 50px;
+            width: 600px;
+            margin: 50px auto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search_main{
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button{
+                margin-top: 10px;
+            }
+        }
+
+        #display_results{
+            // padding: 0px 50px;
+            width: 600px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search_main{
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button{
+                margin-top: 10px;
+            }
+        }
+
+        #display_results{
+            // padding: 0px 50px;
+            width: 400px;
+        }
+    }
+}
